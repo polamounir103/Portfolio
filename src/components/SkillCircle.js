@@ -10,7 +10,7 @@ function SkillCircle({ boxWidth, percentage, radius }) {
       <defs>
         <linearGradient id="progressGradient" x1="0%" y1="100%" x2="0%" y2="0%">
             <stop offset="0%" stopColor="#ffc0dd" />  
-            <stop offset="90%" stopColor="#6a05ff" />
+            <stop offset="15%" stopColor="#6a05ff" />
         </linearGradient>
       </defs>
 
