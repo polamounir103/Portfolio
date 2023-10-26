@@ -53,7 +53,7 @@ function LandPage () {
                 <Row className="align-items-center">
                     <Col xs={12} lg={6} xl={6}>
                         <span className="welcome-title">Welcome All To My Portfolio</span>
-                        <h2 className="my-name"> {`Hi! I'm Pola Mounir Samir,  `}  <span className="wrapped-word"> {  letter  }</span> </h2>
+                        <h2 className="my-name"> {`Hi! I'm Pola Mounir Samir,  `} <br></br> <span className="wrapped-word"> {  letter  }</span> </h2>
                         <p className="main-info">Hello Everyone ,  I have a year of Experience in FrontEnd Development </p>
                         <Nav.Link href="#contact">
                             <button className="main-btn" onClick={() => console.log("connect")} >Let's Connect <ArrowRightCircle size={25}/> </button>

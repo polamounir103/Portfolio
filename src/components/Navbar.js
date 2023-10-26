@@ -13,34 +13,35 @@ function NavBar() {
   const [activeLink , setActiveLink] = useState("home")
   const [scrolled , setScrolled] = useState(false)
   const [activeBtn , setActiveBtn] = useState(menuIcon)
-    useEffect(() =>{
-      const onScroll = () =>  {
-        if (window.scrollY > 50 || activeBtn !== menuIcon ){
-          setScrolled(true)  
-        }else {
-          setScrolled(false)
 
-        }
-      }
-      window.addEventListener("scroll", onScroll)
-      return () => window.removeEventListener("scroll", onScroll)
-    } , [])
-    
-    const onChangeActiveLink = (link) => {
-      setActiveLink(link)
+  const handleScroll = () => {
+    if (window.scrollY > 50 || activeBtn !== menuIcon) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
     }
-    
+  };
+  const onChangeActiveLink = (link) => {
+    setActiveLink(link);
+  };
 
-      const navMenuBtn = () => {
-        if ( activeBtn === menuIcon){
-          setActiveBtn(menuCloseIcon)  
-          setScrolled(true)  
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-        }else {
-          setActiveBtn(menuIcon)
-          setScrolled(false)
-        }
-      }
+  const navMenuBtn = () => {
+    if (activeBtn === menuIcon) {
+      setActiveBtn(menuCloseIcon);
+      setScrolled(true);
+    } else {
+      setActiveBtn(menuIcon);
+      setScrolled(false);
+      handleScroll();
+    }
+  };
+  
 
 
 

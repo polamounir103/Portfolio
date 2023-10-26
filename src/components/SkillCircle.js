@@ -9,8 +9,8 @@ function SkillCircle({ boxWidth, percentage, radius }) {
       <svg width={boxWidth} height={boxWidth} viewBox={`0 0 ${boxWidth} ${boxWidth}`}>
       <defs>
         <linearGradient id="progressGradient" x1="0%" y1="100%" x2="0%" y2="0%">
-            <stop offset="0%" stopColor="#e149a5" />  
-            <stop offset="100%" stopColor="#5839e1" />
+            <stop offset="0%" stopColor="#ffc0dd" />  
+            <stop offset="100%" stopColor="#6a05ff" />
         </linearGradient>
       </defs>
 

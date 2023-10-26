@@ -1,14 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import contactImg from '../assets/images/contact2.svg'
 
 import '../styles/ContactForm.css'
 
+
 const Contact = () => {
+    const [isAppearing, setIsAppearing] = useState(false)
+
+    useEffect(() => {
+      const contactImage = new IntersectionObserver((entries) => {
+        const entry = entries[0];
+        if (entry.isIntersecting) {
+          setIsAppearing(true);
+        }else {
+            setIsAppearing(false);
+            
+        }
+      });
+      contactImage.observe(document.getElementById('contactImg'))
+    }, []);
+  
+    const animationClass = isAppearing ? "appear" : "";
+  
+
   return (
     <section className="contact-section">
         <div id="contact" className="container py-5 contact-container d-flex flex-column flex-lg-row justify-content-center align-item-center ">
             <div className="contact-image-box text-center">
-                <img src={contactImg}  className='contact-image'/>
+                <img src={contactImg}  id="contactImg" className={`contact-image ${animationClass}`}/>
             </div>
             <div className="contact-form p-5 ">
                 <h2 className='contact-title'>Get In Touch</h2>
