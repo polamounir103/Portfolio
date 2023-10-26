@@ -43,9 +43,6 @@ function NavBar() {
   };
   
 
-
-
-
   return (
     <Navbar expand="lg" className={scrolled ? "bg-body-tertiary scrolled " : "bg-body-tertiary"}>
       <Container >

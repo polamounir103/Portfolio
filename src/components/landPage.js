@@ -3,7 +3,7 @@ import { Container , Row , Col, Nav} from "react-bootstrap";
 import { ArrowRightCircle} from "react-bootstrap-icons"
 import '../styles/LandPage.css'
 import comet from "../assets/images/comet.png"
-import mainImg from "../assets/images/mainImg.png"
+import mainImg from "../assets/images/mainImg0.png"
 
 function LandPage () {
 
@@ -60,7 +60,9 @@ function LandPage () {
                         </Nav.Link>
                     </Col>
                     <Col xs={12} md={12} lg={6} className="main-img-box mt-5 mt-lg-0"  >
-                        <img src={mainImg} alt="My Photo" className="main-photo"/>
+                        <div className="main-photo-background">
+                            <img src={mainImg} alt="My Photo" className="main-photo"/> 
+                        </div>
                     </Col>
                 </Row>
             </Container>
