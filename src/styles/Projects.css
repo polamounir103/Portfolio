@@ -1,8 +1,19 @@
 /* Projects */
 .projectSection {
-    background-color: rgba(74, 74, 74, 0.366) !important;
+    background-color: #0b021a ;
     padding: 100px 0 !important;
     position: relative;
+  }
+  .projectSection::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+    background-color: red;
+    background: linear-gradient(0deg , #009dff00 0%, #000000 50%);
   }
   .projectSection h2 {
     font-size: 50px;
@@ -16,6 +27,7 @@
     color: #eeeeee;
     font-size: 18px;
   }
+  
   .projectSection .nav.nav-pills {
     width: 70%;
     margin: 45px auto;

@@ -13,6 +13,7 @@
     max-width: 80%;
     justify-content: space-between;
     border-radius: 50px;
+    box-shadow: 0 0 20px rgba(208, 208, 208, 0.626);
 }
 .sendEmail-container div {
     width: 49%;
