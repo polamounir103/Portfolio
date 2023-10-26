@@ -1,0 +1,93 @@
+.sendEmail-section {
+    position: relative;
+    padding: 150px;
+}
+.sendEmail-container {
+    background-color: #ffffff ;
+    padding: 100px;
+    color: black;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+.sendEmail-container div {
+    width: 49%;
+}
+
+.sendEmail-text {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.sendEmail-form-box {
+    position: relative;
+    height: 60px;
+    /* background-color: red; */
+}
+.sendEmail-email {
+    padding: 20px;
+    width: 100%;
+    border: 1px solid  #d862ff ;
+    outline: none;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.sendEmail-btn{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 120px;
+    height: calc(100% - 20px);
+    transform: translate(0 , -50%);
+    border: none;
+    background: linear-gradient(91deg , #e149a5 0%, #5839e1 125%);
+    color: #ffffff;
+    border-radius: 15px;
+    transition: 0.5s;
+    filter: brightness(1.2);
+}
+.sendEmail-btn:hover {
+    filter: brightness(1);
+    /* background: linear-gradient(91deg , #bb3c88 0%, #412aa8 125%); */
+}
+.sendEmail-btn:active {
+    box-shadow: 3px 3px 10px rgba(210, 18, 253, 0.629);
+    /* background: linear-gradient(91deg , #bb3c88 0%, #412aa8 125%); */
+}
+@media (width < 992px) {
+
+    .sendEmail-container div {
+        width: 100%;
+    }
+    .sendEmail-email {
+        margin-top: 30px;
+        position: relative;
+    }
+
+}
+@media (width < 660px) {
+    .sendEmail-container  {
+        padding: 80px 60px 120px 60px;
+    }
+    .sendEmail-text {
+        font-size: 16px;
+    }
+    .sendEmail-email {
+        margin-top: 30px;
+        position: relative;
+        font-size: 14px;
+    }
+    .sendEmail-btn {
+        position: relative;
+        left: 10px;
+        height: 40px;
+    }
+
+}

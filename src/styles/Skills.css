@@ -1,0 +1,43 @@
+
+.skills-section{
+    position: relative;
+    background-color: #b3b3b300;
+    padding: 50px;
+  
+    text-align: center;
+    height: 500px;
+  }
+  .skills-outer-container {
+    background-color: #000000;
+    position: absolute;
+    top: -10vh;
+    left: 50%;
+    transform: translate(-50% , 0) ;
+    padding: 75px 10px;
+  }
+  .react-multiple-carousel__arrow--right {
+    background-color: rgba(255, 255, 255, 0.147) !important;
+    right: calc(0% + 1px) !important;
+  }
+  .react-multiple-carousel__arrow--left {
+    background-color: rgba(255, 255, 255, 0.147) !important;
+    left: calc(0% + 1px) !important;
+  }
+  .skills-slider{
+    width: 80%;
+    margin: auto;
+  }
+  .circle-box{
+  position: relative;
+  }
+  .percentage-no {
+    font-size: 25px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 255, 0);
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+  }
+  

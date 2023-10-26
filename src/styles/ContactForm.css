@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contact-section {
+    background: linear-gradient(91deg , #e149a5 0%, #5839e1 125%);
+    min-height: calc(100vh + 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container{
+    padding: 0;
+    width: 100%;
+    margin-bottom: 150px;
+    justify-content: space-between !important;
+}
+.contact-image-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 50%;
+}
+.contact-image{
+    width: 70%;
+}
+
+.contact-form {
+
+    width: 50%;
+}
+.contact-title {
+    font-weight: 700;
+}
+
+.input-group {
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.input-group .contact-input ,
+.contact-input-message {
+    width: calc(50% - 5px);
+    padding: 15px;
+    border: 1px solid #FFF;
+    background-color: #ffffff58;
+    color: #FFF ;
+    font-weight: 500;
+    outline: none ;
+    border-radius: 20px !important;
+
+}
+.input-group .contact-input::placeholder  ,
+.contact-input-message::placeholder{
+    color: #FFF;
+}
+
+
+
+.contact-input-message {
+    width: 100%;
+    min-height: 125px;
+    max-height: 125px;
+    margin-bottom: 25px;
+    resize: none;
+}
+
+
+.contact-submit-btn {
+    width: 125px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFF;
+}
+.contact-submit-btn:hover {
+    background-color:#fafafa !important;
+}
+.contact-submit-btn:active {
+    background-color:#efefef !important;
+    box-shadow: 1px 1px 10px 1px rgb(85, 2, 113);
+}
+
+@media (width < 992px) {
+    
+    .contact-image-box {
+        width: 80%;
+        margin: auto;
+    }
+    .contact-form {
+
+        width: 100%;
+    }
+}
+@media (width < 768px) {
+    .contact-image-box {
+        width: 90%;
+        margin: auto;
+    }
+    .contact-title {
+        text-align: center;
+    }
+    .contact-submit-btn {
+        align-self: center;
+    }
+    .input-group .contact-input {
+        width: 100%;
+    }
+}
+@media (width < 660px) {
+    .contact-container{
+        width: 100%;
+    }
+    .contact-image-box{
+        width: 90%;
+        margin: auto;
+    }
+    .contact-image{
+        width: 80%;
+    }
+}
