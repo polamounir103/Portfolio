@@ -38,7 +38,7 @@ function Skills () {
                     <Col>
                         <div className="skills-inner-container">
                             <h2 className="skills-title">  Skills  </h2>
-                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.   </p>
+                            <p> I have different skills  </p>
                             <Carousel responsive={responsive} infinite={true} className="skills-slider">
                                 <div className="skill-item text-center" >
                                      <SkillCircle  boxWidth="250"  percentage="95"  radius='90' />
@@ -53,12 +53,8 @@ function Skills () {
                                     <h5>App Development</h5>
                                 </div>
                                 <div className="skill-item text-center" >
-                                     <SkillCircle  boxWidth="250"  percentage="50"  radius='90' />
-                                    <h5>Content Creator</h5>
-                                </div>
-                                <div className="skill-item text-center" >
                                      <SkillCircle  boxWidth="250"  percentage="90"  radius='90' />
-                                    <h5>Marketing</h5>
+                                    <h5>UI/UX Designer</h5>
                                 </div>
                             </Carousel>
                         </div>

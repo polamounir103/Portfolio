@@ -1,5 +1,5 @@
 import React from 'react';
-
+import imge1 from '../assets/images/contact2.svg';
 function SkillCircle({ boxWidth, percentage, radius }) {
   const circumference = 2 * Math.PI * radius;
   const strokeDashoffset = circumference * (1 - percentage / 100);
@@ -9,8 +9,8 @@ function SkillCircle({ boxWidth, percentage, radius }) {
       <svg width={boxWidth} height={boxWidth} viewBox={`0 0 ${boxWidth} ${boxWidth}`}>
       <defs>
         <linearGradient id="progressGradient" x1="0%" y1="100%" x2="0%" y2="0%">
-            <stop offset="0%" stopColor="#ffc0dd" />  
-            <stop offset="100%" stopColor="#6a05ff" />
+            <stop offset="0%" stopColor="#a11cb8" />  
+            <stop offset="100%" stopColor="#6300f8" />
         </linearGradient>
       </defs>
 
@@ -36,7 +36,7 @@ function SkillCircle({ boxWidth, percentage, radius }) {
           className="skill-circle-progress"
         />
       </svg>
-      <span className="percentage-no">{percentage}%</span>
+      <img className="skill-image" src={imge1}/>
     </div>
   );
 }

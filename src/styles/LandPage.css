@@ -124,66 +124,64 @@
   
   }
   .main-img-box {
-    /* background-color: #FFF; */
     position: relative;
-    height: 400px;
   }
   .main-photo-background {
     margin: auto;
-    width: 75%;
-    height: 110%;
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
+    animation: shaping 6s ease-in-out 0s infinite normal forwards;
     border-radius: 30% 70% 27% 73% / 36% 43% 57% 64% ;
     background: linear-gradient(91deg , #65009cda 0%, #ff00d0c7 125%);
-    animation: shaping 6s ease-in-out 0s infinite normal forwards;
     overflow: hidden;
-    position: relative;
+  }
+  .main-photo-box {
+    max-width: 100%;
+    max-height: 100%;
+    /* background-color: #131313 ; */
+    overflow:  hidden !important; 
   }
   @keyframes shaping {
     0%,100% { 
-          border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;  
-        } 
-    14% { 
-      border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
-        } 
-    28% {
-        border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; 
+        top: calc(50% - 10px);
+        border-radius: 63% 37%  46% / 55% 48% 52% 45%;  
       } 
-    42% {
-        border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; 
+  14% { 
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
       } 
-    56% {
-        border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; 
-      } 
-    70% {
-        border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; 
-      } 
-    84% {
-        border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; 
-      } 
+  28% {
+      border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; 
+    } 
+  42% {
+      border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; 
+    } 
+  56% {
+      border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; 
+    } 
+  70% {
+      border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; 
+    } 
+  84% {
+      border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; 
+    } 
+
+    50%{
+      top: calc(50% + 15px);
+  }
   }
   
   .main-photo {
-    width: 105%;
-    position: absolute;
+    width: 120%;
+    position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    animation: bounce 3s ease-in-out 0s infinite normal forwards;
-  }
-
-  @keyframes bounce {
-    0% {
-      top: calc(50% - 10px);
-    }
-    50% {
-        top: calc(50% + 15px);
-    }
-    100% {
-      top:calc(50% - 10px);
-    }
+    left: -7.5%;
+    translate: -50% , -60%;
+    /* animation: bounce 3s ease-in-out 0s infinite normal forwards; */
   }
 
 
+/* 
 
   @media (min-width: 1400px) and (max-width: 1530px) {
     .main-photo-background{
@@ -216,13 +214,16 @@
 
 @media (width < 776px) {
   .main-photo-background{
-    height: 80%;
-    width: 75%;
-  }
-  .main-photo  {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    left: 50%;
+    background-color: #d50606 !important;
+  } */
+  /* .main-photo  {
 
   }
-}
+}  */
 
 * {
   user-select: none;

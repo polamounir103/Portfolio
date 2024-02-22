@@ -39,11 +39,8 @@
   .circle-box{
   position: relative;
   }
-  .percentage-no {
-    font-size: 25px;
-    font-weight: 600;
-    background-color: rgba(0, 0, 255, 0);
-    color: #000000;
+  .skill-image {
+    width: 30%;
     position: absolute;
     top: 50%;
     left: 50%;

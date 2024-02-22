@@ -24,6 +24,8 @@ function LandPage () {
         if (deleting === true) {
             setSpeed(300)
         }
+
+        
         if(deleting === false && updateWord === fullWord) {
             setDeleting(true)
             setSpeed(timing)
@@ -61,7 +63,9 @@ function LandPage () {
                     </Col>
                     <Col xs={12} md={12} lg={6} className="main-img-box mt-5 mt-lg-0"  >
                         <div className="main-photo-background">
-                            <img src={mainImg} alt="My Photo" className="main-photo"/> 
+                            <div className="main-photo-box">
+                                <img src={mainImg} alt="My Photo" className="main-photo"/> 
+                            </div>
                         </div>
                     </Col>
                 </Row>
